@@ -5,3 +5,28 @@ body {
 .btn {
 	border-radius: 25px;
 }
+
+
+.btn-primary {
+    background-color: yellowgreen;
+    border-color: yellowgreen;
+}
+
+/* Add shadow effect to all buttons */
+.btn {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Add bounce effect on hover */
+.btn:hover {
+    animation: bounce 0.5s;
+}
+
+/* Define bounce animation */
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    25% { transform: translateY(-5px); }
+    50% { transform: translateY(0); }
+    75% { transform: translateY(-2px); }
+    100% { transform: translateY(0); }
+}
